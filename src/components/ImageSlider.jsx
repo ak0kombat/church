@@ -21,7 +21,7 @@ const SimpleCarousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change every 2 seconds
+    }, 2500); // Change every 2 seconds
 
     return () => clearInterval(interval); // Clean up on unmount
   }, []);
