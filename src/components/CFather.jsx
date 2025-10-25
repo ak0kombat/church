@@ -17,11 +17,7 @@ const CFather = () => {
           <p className="font-bold">
             "Peace be with all of you!"
           </p>
-          <p className="sm:w-[45vw] ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-            repellat quod veniam ad, eaque quo?
-          </p>
-          <p className="font-serif">time period 2025- </p>
+          
           <button className="border-2 w-fit  border-green p-1 bg-green text-white rounded capitalize"> read more!</button>
         </header>
       </div>
