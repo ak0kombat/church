@@ -1,75 +1,56 @@
 import React from "react";
 
-/**
- * RubiksGrid.jsx
- * Displays 12 images in a 3x4 grid (like a Rubik’s cube layout expanded).
- * Each image shows Name, Posting, and Year below it.
- */
+// Import your images here
+import img1 from "../assets/img1.jpg";
+import img2 from "../assets/img2.jpg";
+import img3 from "../assets/img3.jpg";
+import img4 from "../assets/img4.jpg";
+import img5 from "../assets/img5.jpg";
+import img6 from "../assets/img6.jpg";
+import img7 from "../assets/img7.jpg";
+import img8 from "../assets/img8.jpg";
+import img9 from "../assets/img9.jpg";
+import img10 from "../assets/img10.jpg";
+import img11 from "../assets/img11.jpg";
+import img12 from "../assets/img12.jpg";
 
-export default function RubiksGrid({ images }) {
-  const defaultImages = Array.from({ length: 12 }).map((_, i) => ({
-    src: `https://picsum.photos/seed/${i}/600`,
-    alt: `Sample ${i + 1}`,
-    name: `Person ${i + 1}`,
-    posting: `Position ${i + 1}`,
-    year: 2025,
-  },{
-    src: `https://picsum.photos/seed/${i}/600`,
-    alt: `Sample ${i + 1}`,
-    name: `Person ${i + 1}`,
-    posting: `Position ${i + 1}`,
-    year: 2025,
-  }));
+const images = [
+  { src: img1, name: "Image 1 description" , posting: "Image1 Posting", year: "year"},
+  { src: img2, name: "Image 1 description" , posting: "Image1 Posting", year: "year"},
+  { src: img3, name: "Image 1 description" , posting: "Image1 Posting", year: "year"},
+  { src: img4, name: "Image 1 description" , posting: "Image1 Posting", year: "year"},
+  { src: img5, name: "Image 1 description" , posting: "Image1 Posting", year: "year"},
+  { src: img6, name: "Image 1 description" , posting: "Image1 Posting", year: "year"},
+  { src: img7, name: "Image 1 description" , posting: "Image1 Posting", year: "year"},
+  { src: img8, name: "Image 1 description" , posting: "Image1 Posting", year: "year"},
+  { src: img9, name: "Image 1 description" , posting: "Image1 Posting", year: "year"},
+  { src: img10, name: "Image 1 description" , posting: "Image1 Posting", year: "year"},
+  { src: img11, name: "Image 1 description" , posting: "Image1 Posting", year: "year"},
+  { src: img12, name: "Image 1 description" , posting: "Image1 Posting", year: "year"},
+];
 
-  const gridImages = images && images.length === 12 ? images : defaultImages;
-
+const ImageGrid = () => {
   return (
-    <div className="w-full max-w-6xl mx-auto p-6">
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-        {gridImages.map((img, idx) => (
-          <figure key={idx} className="flex flex-col items-center">
-            {/* Square container */}
-            <div
-              className="w-full relative overflow-hidden rounded-lg shadow-lg"
-              style={{ paddingBottom: "100%" }}
-            >
-              <img
-                src={img.src}
-                alt={img.alt || `image-${idx}`}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                draggable={false}
-              />
-            </div>
-
-            <figcaption className="mt-3 text-center text-sm md:text-base text-gray-700">
-              <p className="font-semibold">{img.name}</p>
-              <p className="text-gray-600">{img.posting}</p>
-              <p className="text-gray-500">{img.year}</p>
-            </figcaption>
-          </figure>
+    <div className="min-h-screen bg-gray-100 flex justify-center items-center p-10">
+      <div className="grid grid-cols-4 gap-6 w-full max-w-6xl">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition"
+          >
+            <img
+              src={image.src}
+              alt={`image-${index + 1}`}
+              className="w-full h-52 object-cover"
+            />
+            <p className="text-center text-gray-700 text-sm font-medium p-3">
+              {image.desc}
+            </p>
+          </div>
         ))}
       </div>
     </div>
   );
-}
+};
 
-/*
-Usage Example:
-
-import person1 from './assets/p1.jpg';
-import person2 from './assets/p2.jpg';
-...
-const imgs = [
-  { src: person1, alt: 'one', name: 'Alice', posting: 'Manager', year: 2024 },
-  { src: person2, alt: 'two', name: 'Bob', posting: 'Engineer', year: 2025 },
-  ... up to 12 items ...
-];
-
-<RubiksGrid images={imgs} />
-
-Notes:
-- Responsive layout (2 columns on small screens, 3 on medium and up)
-- Uses Tailwind CSS classes
-- Add hover animation for a smooth zoom-in effect
-- Change `gap-6` for different spacing between tiles
-*/
+export default ImageGrid;
