@@ -29,16 +29,16 @@ export const WelcomeBanner = () => {
             />
           <CardForWelcome
             icon={<MdOutlineEvent />}
-            box_name={"upcoming events"}
+            box_name={"Mass Timings"}
             paragraph={
               "stay updated with our upcoming services, events, and activities. so stay tuned."
             }
-            link={"/events"}
+            link={"/Mass_Timings"}
             
             />
           <CardForWelcome
             icon={<SiMaterialformkdocs />}
-            box_name={"materials & donations"}
+            box_name={"Donations for New church constructions"}
             paragraph={
               "support our church building project with your generous contributions."
             }
