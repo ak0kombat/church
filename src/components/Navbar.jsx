@@ -39,6 +39,9 @@ const Navbar = () => {
             <Link to="/" className="hover:text-gray-300">
               <li className="li-nav active">Home</li>
             </Link>
+            <Link to="/Mass Timings" className="hover:text-gray-300">
+              <li className="li-nav active">Mass Timings</li>
+            </Link>
             <Link to="/fathers" className="hover:text-gray-300">
               <li className="li-nav">Our Fathers</li>
             </Link>
