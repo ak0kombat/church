@@ -42,7 +42,7 @@ const ImageGrid = () => {
               <img
                 src={image.src}
                 alt={`image-${index + 1}`}
-                className="w-full h-64 sm:h-72 md:h-80 object-cover"
+                className="w-full h-80 sm:h-100 md:h-120 object-cover"
               />
             </div>
 
