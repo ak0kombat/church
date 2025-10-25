@@ -17,11 +17,7 @@ const C3Father = () => {
           <p className="font-bold">
            - Parish prest
           </p>
-          <p className="sm:w-[45vw] ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-            repellat quod veniam ad, eaque quo?
-          </p>
-          <p className="font-serif">time period ( 2024 - 2028 )</p>
+         
           <button className="border-2 w-fit  border-green p-1 bg-green cursor-pointer text-white rounded capitalize"> read more!</button>
         </header>
       </div>
