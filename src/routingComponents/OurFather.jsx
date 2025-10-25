@@ -25,15 +25,15 @@ const images = [
   { src: img8, name: "Rev.A.Soosairaj" , posting: "Eighth Parish Priest", year: "17-06-2001 to 02-06-2006"},
   { src: img9, name: "Rev.A.James" , posting: "Nineth Parish Prince", year: "02-06-2006 to 05-06-2011"},
   { src: img10, name: "Rev.A.Sundhararaj" , posting: "Tenth Parish Priest", year: "2011 to 2016"},
-  { src: img11, name: "Rev.M.Gnanadhikam" , posting: "Eleventh Parish Priest", year: "2016 to 2024"},
-  { src: img12, name: "Fr. Jerome gnana prabu" , posting: "Twelveth Parish Priest", year: "2024 to 2028"}
+  { src: img11, name: "Rev.M.Gnanadhikam" , posting: "Eleventh Parish Priest", year: "2016 to 2021"},
+  { src: img12, name: "Fr. Jerome gnana prabu" , posting: "Twelveth Parish Priest", year: "2021 to -"}
   
 ];
 
 const ImageGrid = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex justify-center items-center p-10">
-      <div className="grid grid-cols-4 gap-8 w-full max-w-6xl">
+      <div className="grid grid-cols-3 gap-8 w-full max-w-6xl">
         {images.map((image, index) => (
           <div key={index} className="flex flex-col items-center">
             {/* Image box */}
@@ -41,7 +41,7 @@ const ImageGrid = () => {
               <img
                 src={image.src}
                 alt={`image-${index + 1}`}
-                className="w-full h-52 object-cover"
+                className="w-full h-100 object-cover"
               />
             </div>
 
