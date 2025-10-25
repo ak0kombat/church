@@ -36,7 +36,7 @@ const ImageGrid = () => {
 
             {/* Description below image */}
             <p className="mt-4 text-center text-gray-800 text-sm font-medium">
-              {image.desc}
+              {image.name}
             </p>
           </div>
         ))}
