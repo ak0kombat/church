@@ -22,18 +22,20 @@ const images = [
 const ImageGrid = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex justify-center items-center p-10">
-      <div className="grid grid-cols-4 gap-6 w-full max-w-6xl">
+      <div className="grid grid-cols-4 gap-8 w-full max-w-6xl">
         {images.map((image, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition"
-          >
-            <img
-              src={image.src}
-              alt={`image-${index + 1}`}
-              className="w-full h-52 object-cover"
-            />
-            <p className="text-center text-gray-700 text-sm font-medium p-3">
+          <div key={index} className="flex flex-col items-center">
+            {/* Image box */}
+            <div className="w-full bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
+              <img
+                src={image.src}
+                alt={`image-${index + 1}`}
+                className="w-full h-52 object-cover"
+              />
+            </div>
+
+            {/* Description below image */}
+            <p className="mt-4 text-center text-gray-800 text-sm font-medium">
               {image.desc}
             </p>
           </div>
