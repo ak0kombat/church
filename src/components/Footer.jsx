@@ -23,7 +23,7 @@ const Footer = () => {
         <nav className="flex flex-col gap-2">
           <h4 className="text-lg text-white mb-2">Quick Links</h4>
           <Link to={"/"} onClick={() => window.scrollTo(0, 0)} className="hover:text-yellow-400 transition">Home</Link>
-          <Link to={"/Mass Timings"} onClick={() => window.scrollTo(0, 0)} className="hover:text-yellow-400 transition">Mass Timings</Link>
+          <Link to={"/Mass_Timings"} onClick={() => window.scrollTo(0, 0)} className="hover:text-yellow-400 transition">Mass Timings</Link>
           <Link to={"/fathers"} onClick={() => window.scrollTo(0, 0)} className="hover:text-yellow-400 transition">Our Fathers</Link>
           <Link to={"/Constructions"} onClick={() => window.scrollTo(0, 0)} className="hover:text-yellow-400 transition">Constructions</Link>
           <Link to={"/material"} onClick={() => window.scrollTo(0, 0)}className="hover:text-yellow-400 transition">Materials</Link>
