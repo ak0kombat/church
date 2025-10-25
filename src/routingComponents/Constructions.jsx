@@ -52,6 +52,15 @@ const Constructions = () => {
           />
         </div>
 
+        {/* Image 4 */}
+        <div className="bg-white rounded-2xl shadow-lg overflow-hidden w-[900px]">
+          <img
+            src={construction4}
+            alt="Gallery 4"
+            className="[900px] h-[500px] object-contain rounded-2xl mx-auto"
+          />
+        </div>
+
         
       </div>
     
