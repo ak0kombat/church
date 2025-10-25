@@ -29,14 +29,7 @@ const MaterialsRoutes = () => {
                         <span>kattur, trichy -620190.</span>
                     </div>
                 </div>
-                <div className=" grid grid-cols-1 place-items-center md:flex md:flex-col justify-around items-center ">
-                    <img
-                        src={QRcodeImage}
-                        alt="QR Code to pay"
-                        className="w-40 h-40 object-contain rounded-md border"
-                    />
-                    <p className="mt-2 text-sm text-gray-600">QR Code to pay</p>
-                </div>
+               
             </section>
         </section>
     );
