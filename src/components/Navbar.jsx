@@ -11,6 +11,7 @@ const SideMenu = ({ onClose }) => (
       <button className="mb-4 text-green-700" onClick={onClose}>Close</button>
       <ul className="flex flex-col gap-4 text-lg">
         <Link to="/" onClick={onClose}><li>Home</li></Link>
+        <Link to="/Mass Timings" onClick={onClose}><li>Mass Timings</li></Link>
         <Link to="/fathers" onClick={onClose}><li>Our Fathers</li></Link>
         <Link to="/Construction" onClick={onClose}><li>Construction</li></Link>
         <Link to="/material" onClick={onClose}><li>Materials</li></Link>
