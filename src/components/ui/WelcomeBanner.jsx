@@ -26,6 +26,7 @@ export const WelcomeBanner = () => {
               "meet our dedicated clearly members who guide our spiritual journey."
             }
             link={"/fathers"}
+            onClick={() => window.scrollTo(0, 0)}
             />
           <CardForWelcome
             icon={<MdOutlineEvent />}
@@ -34,15 +35,16 @@ export const WelcomeBanner = () => {
               "stay updated with our upcoming services, events, and activities. so stay tuned."
             }
             link={"/Mass_Timings"}
-            
+            onClick={() => window.scrollTo(0, 0)}
             />
           <CardForWelcome
             icon={<SiMaterialformkdocs />}
-            box_name={"Donations for New church constructions"}
+            box_name={<span className="text-center block">Donations for New church constructions</span>}
             paragraph={
               "support our church building project with your generous contributions."
             }
             link={"/material"}
+            onClick={() => window.scrollTo(0, 0)}
             />
           <CardForWelcome
             icon={<MdWifiCalling />}
@@ -51,6 +53,7 @@ export const WelcomeBanner = () => {
               "contact us, if you have any queries or anything to the provided details. "
             }
             link={"/contact"}
+            onClick={() => window.scrollTo(0, 0)}
             />
         </section>
       </div>
