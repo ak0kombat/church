@@ -8,7 +8,7 @@ import { MdWifiCalling } from "react-icons/md";
 export const WelcomeBanner = () => {
   return (
     <section className="w-full minimum-h-[50vh] mt-2 mb-7 ">
-      <div className="flex flex-col justify-center gap-3 items-center text-gray-800 font-bold font-new p-2">
+      <div onClick={onClick} className="cursor-pointer flex flex-col justify-center gap-3 items-center text-gray-800 font-bold font-new p-2">
         <h1 className=" capitalize text-center font-sans text-3xl font-bold ">
           Welcome to church of st.joseph{" "}
         </h1>
