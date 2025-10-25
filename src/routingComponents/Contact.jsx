@@ -59,40 +59,25 @@ const Contact = () => {
         <div>
           <span className="font-semibold text-gray-700">Address:</span>
           <div className="text-gray-600">
-            Church of St. Joseph<br />
-            Kottayam, Kerala<br />
-            India - 686001
+            St.Joseph the Worker Church<br />
+            Kailasapuram Division, Diocese of Trichy<br />
+            India - 620014
           </div>
         </div>
         <div>
           <span className="font-semibold text-gray-700">Phone:</span>
-          <div className="text-gray-600">+91 123 456 7890</div>
+          <div className="text-gray-600">0431-2557348</div>
         </div>
-        <div>
-          <span className="font-semibold text-gray-700">Email:</span>
-          <div className="text-gray-600">info@stjosephchurch.org</div>
-        </div>
-        <div>
-          <span className="font-semibold text-gray-700">Service Times:</span>
-          <ul className="text-gray-600 list-disc list-inside">
-            <li>Sunday Mass: 8:00 AM &amp; 10:30 AM</li>
-            <li>Wednesday Service: 7:00 PM</li>
-            <li>Friday Prayer: 6:30 PM</li>
-          </ul>
-        </div>
+               
         <div>
           <span className="font-semibold text-gray-700">Office Hours:</span>
           <ul className="text-gray-600 list-disc list-inside">
-            <li>Mon - Fri: 9:00 AM - 5:00 PM</li>
-            <li>Saturday: 9:00 AM - 2:00 PM</li>
-            <li>Sunday: After morning services</li>
+            <li>Morning: 9:30 AM - 12:30 PM</li>
+            <li>Evening: 5:00 PM - 5:30 PM</li>
+            
           </ul>
         </div>
-        <div>
-          <span className="font-semibold text-gray-700">Emergency Contact:</span>
-          <div className="text-red-600 font-bold">+91 987 654 3210</div>
-          <div className="text-gray-600 text-sm">For urgent pastoral care or emergencies</div>
-        </div>
+        
       </div>
     </div>
   )
