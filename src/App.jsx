@@ -4,6 +4,7 @@ import Home from "./routingComponents/Home";
 import About from "./routingComponents/About";
 import Contact from "./routingComponents/Contact";
 import Constructions from "./routingComponents/Constructions";
+import Mass_Timings from "./routingComponents/Mass_Timings";
 import { Route,  Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import {ScrollShadow} from "@heroui/scroll-shadow";
@@ -19,7 +20,8 @@ const App = () => {
         <Route path='/' element={<Home />} />
        <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/Constructions' element={<Constructions />} /> 
+        <Route path='/Constructions' element={<Constructions />} />
+        <Route path='/Mass_Timings' element={<Mass_Timings />} />
         <Route path='/material' element={<MaterialsRoutes />} /> 
         <Route path='/fathers' element={<OurFather />} /> 
         <Route path='/events' element={<Events />} /> 
