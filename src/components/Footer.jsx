@@ -9,13 +9,13 @@ const Footer = () => {
         {/* Logo & Info */}
         <aside className="flex flex-col items-center md:items-start gap-3">
           <img src={churchLogo} className="w-28 h-20 object-cover rounded shadow-lg mb-2" alt="Church Logo" />
-          <p className="font-bold text-xl">St. Mary's Church</p>
+          <p className="font-bold text-xl">St.Joseph The Worker Church</p>
           <span className="font-light text-sm text-gray-200 mb-2 text-center md:text-left">
             Where faith, love, and community come together.
           </span>
           <div className="flex flex-col gap-1 text-gray-300 text-sm">
-            <span>Phone: (123) 456-7890</span>
-            <span>Email: contact@churchname.org</span>
+            <span>Phone: 0431-2557348</span>
+            
           </div>
           
         </aside>
