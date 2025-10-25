@@ -1,18 +1,18 @@
 import React from "react";
 
 // Import your images here
-import img1 from "src/assets/fatherImg/cfather1.jpg";
-import img2 from "src/assets/fatherImg/cfather2.jpg";
-import img3 from "src/assets/fatherImg/cfather3.jpg";
-import img4 from "src/assets/fatherImg/cfather4.jpg";
-import img5 from "src/assets/fatherImg/cfather5.jpg";
-import img6 from "src/assets/fatherImg/cfather6.jpg";
-import img7 from "src/assets/fatherImg/cfather7.jpg";
-import img8 from "src/assets/fatherImg/cfather8.jpg";
-import img9 from "src/assets/fatherImg/cfather9.jpg";
-import img10 from "src/assets/fatherImg/cfather10.jpg";
-import img11 from "src/assets/fatherImg/cfather11.jpg";
-import img12 from "src/assets/fatherImg/father3.jpg";
+import img1 from "../assets/fatherImg/cfather1.jpg";
+import img2 from "../assets/fatherImg/cfather2.jpg";
+import img3 from "../assets/fatherImg/cfather3.jpg";
+import img4 from "../assets/fatherImg/cfather4.jpg";
+import img5 from "../assets/fatherImg/cfather5.jpg";
+import img6 from "../assets/fatherImg/cfather6.jpg";
+import img7 from "../assets/fatherImg/cfather7.jpg";
+import img8 from "../assets/fatherImg/cfather8.jpg";
+import img9 from "../assets/fatherImg/cfather9.jpg";
+import img10 from "../assets/fatherImg/cfather10.jpg";
+import img11 from "../assets/fatherImg/cfather11.jpg";
+import img12 from "../assets/fatherImg/father3.jpg";
 
 const images = [
   { src: img1, name: "Rev.R.V.Mathias" , posting: "First Parish Priest", year: "01-05-1967 to 01-05-1972"},
