@@ -11,7 +11,7 @@ const SideMenu = ({ onClose }) => (
       <button className="mb-4 text-green-700" onClick={onClose}>Close</button>
       <ul className="flex flex-col gap-4 text-lg">
         <Link to="/" onClick={onClose}><li>Home</li></Link>
-        <Link to="/Mass Timings" onClick={onClose}><li>Mass Timings</li></Link>
+        <Link to="/Mass_Timings" onClick={onClose}><li>Mass Timings</li></Link>
         <Link to="/fathers" onClick={onClose}><li>Our Fathers</li></Link>
         <Link to="/Construction" onClick={onClose}><li>Construction</li></Link>
         <Link to="/material" onClick={onClose}><li>Materials</li></Link>
@@ -39,7 +39,7 @@ const Navbar = () => {
             <Link to="/" className="hover:text-gray-300">
               <li className="li-nav active">Home</li>
             </Link>
-            <Link to="/Mass Timings" className="hover:text-gray-300">
+            <Link to="/Mass_Timings" className="hover:text-gray-300">
               <li className="li-nav active">Mass Timings</li>
             </Link>
             <Link to="/fathers" className="hover:text-gray-300">
