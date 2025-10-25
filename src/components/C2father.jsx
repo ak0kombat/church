@@ -16,11 +16,7 @@ const C2Father = () => {
           <p className="font-bold">
             - father of st. joseph the worker
           </p>
-          <p className="sm:w-[45vw] ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-            repellat quod veniam ad, eaque quo?
-          </p>
-          <p className="font-serif">time period ( 2024 - 2028 )</p>
+          
           <button className="border-2 w-fit  border-green p-1 bg-green text-white cursor-pointer rounded capitalize"> read more!</button>
         </header>
       </div>
