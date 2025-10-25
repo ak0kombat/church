@@ -1,100 +1,56 @@
 import React from "react";
 
-const MassTimes = () => {
+const MassTimings = () => {
   return (
-    <div className="min-h-screen bg-gray-50 flex justify-center items-center px-4 py-10">
-      <div className="w-full max-w-5xl bg-white rounded-2xl shadow-md p-8">
-        {/* Tamil Section */}
-        <h2 className="text-2xl font-semibold text-center text-gray-900 font-[Poppins] mb-6">
-          திருப்பலி நேரங்கள்
-        </h2>
+    <div className="bg-gray-50 text-gray-900 font-sans p-6">
+      <div className="container mx-auto">
+        <h1 className="text-center text-2xl font-bold mb-6">
+          திருப்பலி நேரங்கள் | Mass Timings
+        </h1>
 
-        <div className="space-y-6 text-gray-800 leading-relaxed text-[17px] font-[Noto Sans Tamil]">
-          <div>
-            <h3 className="font-semibold text-lg">ஞாயிறு</h3>
-            <p>புனித சூசையப்பர் ஆலயம் (பங்கு ஆலயம் R செக்டார்)</p>
-            <p>காலை 7.30 மணி</p>
-            <p>மாலை 6.15 மணி</p>
+        {/* Wrapper for English + Tamil */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          {/* English Section */}
+          <div className="text-left bg-white rounded-2xl p-6 shadow">
+            <h2 className="text-xl font-semibold mb-3">Mass Times</h2>
+            <p>
+              <strong>Sunday:</strong> Susaiyappar Temple (Parish Church - R Sector): 7.30 AM and 6.15 PM
+            </p>
+            <p><strong>Weekdays:</strong> 6.15 AM</p>
+            <p><strong>Wednesday:</strong> St. Joseph's Novena Mass 6.15 PM</p>
+            <p><strong>Sunday:</strong> St. Jude Thaddeus Church (C Sector) 6.15 AM</p>
+            <p><strong>Thursday:</strong> St. Jude Thaddeus Novena Mass 6.15 PM</p>
+            <p><strong>Thursday:</strong> Holy Child Jesus Novena Mass 6.30 PM (Ezil Nagar)</p>
+
+            <h2 className="text-xl font-semibold mt-6 mb-2">Office Hours</h2>
+            <p>Morning: 9.30 - 12.30</p>
+            <p>Evening: 5.00 - 5.30</p>
+            <p><strong>Phone:</strong> (0431) 2557348</p>
           </div>
 
-          <div>
-            <h3 className="font-semibold text-lg">வார நாட்கள்</h3>
-            <p>காலை 6.15 மணி</p>
-          </div>
+          {/* Tamil Section */}
+          <div className="text-right bg-white rounded-2xl p-6 shadow">
+            <h2 className="text-xl font-semibold mb-3">திருப்பலி நேரங்கள்</h2>
+            <p>
+              <strong>ஞாயிறு:</strong> புனித சூசையப்பர் ஆலயம் (பங்கு ஆலயம் R செக்டார்) காலை 7.30 மணி & மாலை 6.15 மணி
+            </p>
+            <p><strong>வார நாட்கள்:</strong> காலை 6.15 மணி</p>
+            <p><strong>புதன்:</strong> புனித சூசையப்பர் நவநாள் திருப்பலி மாலை 6.15 மணி</p>
+            <p><strong>ஞாயிறு:</strong> புனித யூதா ததேயு ஆலயம் (C செக்டார்) காலை 6.15 மணி</p>
+            <p><strong>வியாழன்:</strong> புனித யூதா ததேயு நவநாள் திருப்பலி மாலை 6.15 மணி</p>
+            <p><strong>வியாழன்:</strong> புனித குழந்தை இயேசு நவநாள் திருப்பலி மாலை 6.30 மணி (எழில் நகர்)</p>
 
-          <div>
-            <h3 className="font-semibold text-lg">புதன்</h3>
-            <p>புனித சூசையப்பர் நவநாள் திருப்பலி மாலை 6.15 மணி</p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg">ஞாயிறு</h3>
-            <p>புனித யூதா ததேயு ஆலயம் (C செக்டார்) காலை 6.15 மணி</p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg">வியாழன்</h3>
-            <p>புனித யூதா ததேயு நவநாள் திருப்பலி மாலை 6.15 மணி</p>
-            <p>புனித வனத்து அந்தோணியார் நவநாள் திருப்பலி மாலை 6.30 மணி</p>
-            <p>புனித குழந்தை இயேசு நவநாள் திருப்பலி மாலை 6.30 மணி (எழில் நகர்)</p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg">பங்கு அலுவலக நேரம்</h3>
+            <h2 className="text-xl font-semibold mt-6 mb-2">பங்கு அலுவலக நேரம்</h2>
             <p>காலை: 9.30 - 12.30 மணி</p>
             <p>மாலை: 5.00 - 5.30 மணி</p>
-            <p>தொலைபேசி எண்: (0431) 2557348</p>
-          </div>
-        </div>
-
-        {/* Divider */}
-        <div className="my-8 border-t border-gray-300"></div>
-
-        {/* English Section */}
-        <h2 className="text-2xl font-semibold text-center text-gray-900 font-[Poppins] mb-6">
-          Mass Times
-        </h2>
-
-        <div className="space-y-6 text-gray-800 leading-relaxed text-[17px] font-[Inter]">
-          <div>
-            <h3 className="font-semibold text-lg">Sunday</h3>
-            <p>Susaiyappar Temple (Parish Church R Sector)</p>
-            <p>7.30 am and 6.15 pm</p>
+            <p><strong>தொலைபேசி எண்:</strong> (0431) 2557348</p>
           </div>
 
-          <div>
-            <h3 className="font-semibold text-lg">Days of the Week</h3>
-            <p>6.15 am</p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg">Wednesday</h3>
-            <p>St. Joseph’s Novena Mass – 6.15 pm</p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg">Sunday</h3>
-            <p>St. Jude Thaddeus Church (C Sector) – 6.15 am</p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg">Thursday</h3>
-            <p>Novena Mass of St. Jude Thaddeus – 6.15 pm</p>
-            <p>St. Antony of the Forest Novena Mass – 6.30 pm</p>
-            <p>Holy Child Jesus Novena Mass – 6.30 pm (Ezil Nagar)</p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg">Parish Office Hours</h3>
-            <p>Morning: 9.30 – 12.30</p>
-            <p>Evening: 5.00 – 5.30</p>
-            <p>Phone Number: (0431) 2557348</p>
-          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default MassTimes;
-
+export default MassTimings;
