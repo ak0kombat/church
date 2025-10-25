@@ -25,7 +25,8 @@ export const WelcomeBanner = () => {
             paragraph={
               "meet our dedicated clearly members who guide our spiritual journey."
             }
-            <Link to={"/fathers"} onClick={() => window.scrollTo(0, 0)}></Link>
+            link={"/fathers"}
+            onClick={() => window.scrollTo(0, 0)}
             />
           <CardForWelcome
             icon={<MdOutlineEvent />}
